@@ -8,7 +8,7 @@
 import axios from 'axios'
 
 let mounted = function() {
-  axios.get('http://localhost:3000/hello-world')
+  axios.get('api/hello-world')
     .then(x => x.data)
     .then(x => this.message = x)
 }

@@ -1,7 +1,6 @@
 let express = require('express')
-let cors = require('cors')
 
-let app = express().use(cors())
+let app = express()
 let port = 3000
 
 app.get('/hello-world', (req, res) => res.send('Hello World!'))
